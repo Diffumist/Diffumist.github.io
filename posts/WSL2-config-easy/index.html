@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>WSL2 踩坑简单记录 | Diffumist Box</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><link rel="icon" typt="image&#x2F;png" sizes="192x192" href="/img/android-chrome-192x192.png"><link rel="icon" typt="image&#x2F;png" sizes="32x32" href="/img/favicon.ico"><link rel="icon" typt="image&#x2F;png" sizes="16x16" href="/img/favicon-32x32.png">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+    
+        <!-- Import DisqusJS Default Theme -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.css"></noscript>
+
+    
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/lib/prettify/themes/github-v2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/lib/prettify/themes/github-v2.min.css"></noscript><style>
+        pre.prettyprint {
+            padding: 4px 0 0 2px !important;
+        }
+
+        pre.prettyprint ol,
+        pre.prettyprint ul {
+            padding-left: 42px;
+        }
+
+        pre.prettyprint ol li {
+            background: transparent;
+        }
+
+        .prettyprint li.L0,
+        .prettyprint li.L1,
+        .prettyprint li.L2,
+        .prettyprint li.L3,
+        .prettyprint li.L4,
+        .prettyprint li.L5,
+        .prettyprint li.L6,
+        .prettyprint li.L7,
+        .prettyprint li.L8,
+        .prettyprint li.L9 {list-style-type: decimal !important;
+        }
+        </style>
+
+
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Diffumist Box"><meta name="msapplication-starturl" content="https://diffumist.now.sh"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Diffumist Box"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="/manifest.json"><link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Diffumist Box">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="WSL2 踩坑简单记录 | Diffumist Box"><meta property="og:site_name" content="Diffumist Box"><meta property="og:type" content="article"><meta property="og:url" content="https://diffumist.now.sh/posts/WSL2-config-easy/"><meta property="og:locale" content="zh-CN"><meta name="description" content="A WSL - Diffumist - Diffumist Box"><meta name="keywords" content="Linux, WSL"><meta property="og:image" content="https://cdn.misanzhiwu.top/2020/05/15/6530d2ff73cee.png"><meta property="article:published_time" content="2020-05-14T16:00:00.000Z"><meta property="article:modified_time" content="2020-05-14T16:00:00.000Z"><meta property="og:updated_time" content="2020-05-14T16:00:00.000Z"><meta property="article:author" content="Diffumist"><meta property="article:tag" content="Linux, WSL"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://diffumist.now.sh/posts/WSL2-config-easy/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://diffumist.now.sh/posts/WSL2-config-easy/",
+    "@type": "BlogPosting",
+    "logo": "https://diffumist.now.sh/img/android-chrome-192x192.png",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://diffumist.now.sh/posts/WSL2-config-easy/"
+    },
+    "headline": "WSL2 踩坑简单记录 | Diffumist Box",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://diffumist.now.sh/img/android-chrome-192x192.png"
+    },
+    
+    "datePublished": "2020-05-14T16:00:00.000Z",
+    "dateModified": "2020-05-14T16:00:00.000Z",
+    "author": {
+        "@type": "Person",
+        "name": "Diffumist",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://diffumist.now.sh/img/android-chrome-192x192.png"
+        },
+        "description": "Without the dark, we'd never see the stars"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Diffumist Box",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://diffumist.now.sh/img/android-chrome-192x192.png"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://diffumist.now.sh/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "Linux, WSL",
+    "description": "A WSL - Diffumist - Diffumist Box"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Diffumist Box</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Without the dark, we'd never see the stars
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+    
+        <a href="/about/" class="navbar-link">关于</a>
+    
+        <a href="/links/" class="navbar-link">友链</a>
+    
+    
+    
+        <a href="/atom.xml" target="_blank" class="navbar-link">RSS</a>
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">WSL2 踩坑简单记录</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/android-chrome-192x192.png" src="/img/suka-lazyload.gif" alt="Diffumist's Avatar">
+        <span>2020-05-15</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
+        
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#检查-WSL-版本（WSL-1-和-2-支持互相转换"><span class="post-toc-number">1.</span> <span class="post-toc-text">检查 WSL 版本（WSL 1 和 2 支持互相转换</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于-systemd-支持"><span class="post-toc-number">2.</span> <span class="post-toc-text">关于 systemd 支持</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#WSL2-的代理设置"><span class="post-toc-number">3.</span> <span class="post-toc-text">WSL2 的代理设置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#其他"><span class="post-toc-number">4.</span> <span class="post-toc-text">其他</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#后记"><span class="post-toc-number">5.</span> <span class="post-toc-text">后记</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <blockquote>
+<p>A WSL </p>
+</blockquote>
+<a id="more"></a>
+
+
+<p>M$ 在 WSL2 采用了 Hyper-V ，原先的 rootfs 变成了 vhdx ，Docker 支持，文件 I/O 也提高了，和普通虚拟机相比还拥有飞快的启动速度，配合 Windows Terminal 和 Vscode remote 可以说是神器，不过由于 Hyper-V 等原因还是有一些坑需要解决</p>
+<h2 id="检查-WSL-版本（WSL-1-和-2-支持互相转换"><a href="#检查-WSL-版本（WSL-1-和-2-支持互相转换" class="headerlink" title="检查 WSL 版本（WSL 1 和 2 支持互相转换"></a>检查 WSL 版本（WSL 1 和 2 支持互相转换</h2><pre><code class="powershell">  wsl --list --verbose</code></pre>
+<p>  <img src="https://cdn.misanzhiwu.top/2020/05/15/6530d2ff73cee.png" alt=""></p>
+<h2 id="关于-systemd-支持"><a href="#关于-systemd-支持" class="headerlink" title="关于 systemd 支持"></a>关于 systemd 支持</h2><ul>
+<li><p>WSL 无论是 1 还是 2 本身不支持 systemd，但有 WSL2 的第三方实现 Genie ，从而使用守护进程等操作</p>
+<p><a href="https://github.com/arkane-systems/genie" target="_blank" rel="noopener">https://github.com/arkane-systems/genie</a></p>
+</li>
+</ul>
+<h2 id="WSL2-的代理设置"><a href="#WSL2-的代理设置" class="headerlink" title="WSL2 的代理设置"></a>WSL2 的代理设置</h2><ul>
+<li><p>WSL2 是使用 Hyper-V 虚拟机实现的，不能跟 Windows 共享同一个 localhost ，且重启 ip 都会变化</p>
+</li>
+<li><p>自行安装 proxychain-ng 后，向 shell 的配置文件（如 <code>.bashrc，.zshrc，.fishrc</code>等）添加以下命令（端口自行修改）</p>
+<pre><code class="shell">export WIN_IP=`cat /etc/resolv.conf | grep nameserver | awk &#39;{print $2}&#39;`
+cp -f /etc/proxychains.conf ~/.proxychains.conf
+sed -i &#39;/\[ProxyList\]/,$d&#39; ~/.proxychains.conf
+sed -i &#39;/\[http]/,$d&#39; ~/.gitconfig
+echo -e &#39;[http]\nproxy=socks5://&#39;${WIN_IP}&#39;:7891\n[https]\nproxy=socks5://&#39;${WIN_IP}&#39;:7891&#39; &gt;&gt; ~/.gitconfig
+sed -i &#39;/socks5.*/d&#39; ~/.curlrc
+echo &#39;socks5=&#39;${WIN_IP}&#39;:7891&#39; &gt;&gt; ~/.curlrc
+echo -e &#39;[ProxyList]\nsocks5 &#39;${WIN_IP}&#39; 7891&#39; &gt;&gt; ~/.proxychains.conf
+alias pc=&#39;proxychains4 -q -f ~/.proxychains.conf&#39;</code></pre>
+<blockquote>
+<p>基于 <a href="https://www.cnblogs.com/zsmumu/p/12416159.html" target="_blank" rel="noopener">https://www.cnblogs.com/zsmumu/p/12416159.html</a> 修改</p>
+</blockquote>
+</li>
+<li><p>也可以使用这个小工具实现</p>
+<p><a href="https://github.com/shayne/go-wsl2-host" target="_blank" rel="noopener">https://github.com/shayne/go-wsl2-host</a></p>
+</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li>虽然 WSL2 本身 I/O 得到提升但跨系统 I/O 变差，可以在跨系统 I/O 时切换到 WSL1</li>
+<li>从资源管理器访问 WSL 文件，地址栏输入 <code>\\wsl$\</code> ，在 Windows 19603 及以后版本已经集成在资源管理器中</li>
+<li><a href="https://www.virtualbox.org/wiki/Changelog-6.0" target="_blank" rel="noopener">VirtualBox</a> 和 <a href="https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html" target="_blank" rel="noopener">VMware</a> 都发布了支持 Hyper-V 和 WSL2 的版本 </li>
+<li>LxRunOffline 不支持操作 WSL2 需要先转换为 WSL1</li>
+<li>进行系统全量备份时切换为 WSL 1 ，因原先的 rootfs 变成了 vhdx ，加之 LxRunOffline 还不支持备份还原 WSL2 容易丢失 WSL（</li>
+</ul>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><ul>
+<li>M$ 在 Build 2020 全球开发者大会上，发布了 Windows Terminal 1.0 正式版，包管理器 winget 的预览版，WSL2 也将很快支持 GPU 和 Linux GUI，Windows 10：可能是对新手最友好的 Linux 发行版？</li>
+<li>Windows 的开发环境在不断改善了，scoop 包管理环境变量 + WSL + Terminal 确实有些舒适</li>
+<li>当然 WSL 替代不了双系统，某些时候 WSL 的问题可能更多</li>
+</ul>
+
+                    </article>
+                    
+    <blockquote class="post-license">
+        <p>
+            <strong>本文作者&nbsp;:&nbsp;Diffumist</strong>
+            <br>
+            <strong>
+            
+                This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>
+            </strong>
+            <br>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://diffumist.now.sh/posts/WSL2-config-easy/">https://diffumist.now.sh/posts/WSL2-config-easy/</a>
+        </p>
+    </blockquote>
+
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-05-15");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2020-05-14T16:00:00.000Z" itemprop="datePublished">2020-05-15</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E5%BC%80%E5%8F%91/'>开发</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/Linux/" rel="tag">#&nbsp;Linux</a>
+
+<a class="post-tags-list-item" href="/tags/WSL/" rel="tag">#&nbsp;WSL</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/posts/leeks-learn-patch/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">青年大学习的特殊姿势水平</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                        <div class="card-footer post-comment">
+                            <div id="disqus_thread"></div>
+
+<script id="js-disqusjs" src="https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.js" async></script>
+<script>
+document.getElementById('js-disqusjs').addEventListener('load', function () {
+    function loadDisqusJS() {
+        new DisqusJS({
+            shortname: 'misanzhiwu',
+            
+            siteName: 'Diffumist Box',
+            
+            identifier: 'https://diffumist.now.sh/posts/WSL2-config-easy/',
+            url: 'https://diffumist.now.sh/posts/WSL2-config-easy/',
+            api: 'https://disqus.diffumist.workers.dev/api/',
+            apikey: 'RUHWQkFWwqH0wRK4w56AN3s8EWy9NWkpcQFLWR8sRklM4vKJ7AKbdVCH5pfR3D21',
+            
+            admin: 'Diffumist',
+            
+            
+            adminLabel: 'Diffumist'
+            
+        })
+    }
+    if (document.readyState === 'complete') {
+        loadDisqusJS();
+    } else {
+        window.addEventListener('load', loadDisqusJS);
+    }
+});
+</script>
+
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://diffumist.now.sh">Diffumist Box</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2019;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+
+    <!-- prettify -->
+    
+    
+        <script src="/lib/prettify/prettify.js"></script>
+    
+    <script>
+        for (var i = 0; i < (document.querySelectorAll('pre') || []).length; i += 1) {
+            document.querySelectorAll('pre')[i].classList.add('prettyprint');
+            document.querySelectorAll('pre')[i].classList.add('linenums');
+        }
+        prettyPrint();
+    </script>
+
+
+
+
+<!-- Comment -->
+
+    
+        <!-- No need for DisqusJS -->
+    
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

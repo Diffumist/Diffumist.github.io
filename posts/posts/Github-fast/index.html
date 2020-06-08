@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>Github 加速汇总 | Diffumist Box</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><link rel="icon" typt="image&#x2F;png" sizes="192x192" href="/img/android-chrome-192x192.png"><link rel="icon" typt="image&#x2F;png" sizes="32x32" href="/img/favicon.ico"><link rel="icon" typt="image&#x2F;png" sizes="16x16" href="/img/favicon-32x32.png">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+    
+        <!-- Import DisqusJS Default Theme -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.css"></noscript>
+
+    
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/lib/prettify/themes/github-v2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/lib/prettify/themes/github-v2.min.css"></noscript><style>
+        pre.prettyprint {
+            padding: 4px 0 0 2px !important;
+        }
+
+        pre.prettyprint ol,
+        pre.prettyprint ul {
+            padding-left: 42px;
+        }
+
+        pre.prettyprint ol li {
+            background: transparent;
+        }
+
+        .prettyprint li.L0,
+        .prettyprint li.L1,
+        .prettyprint li.L2,
+        .prettyprint li.L3,
+        .prettyprint li.L4,
+        .prettyprint li.L5,
+        .prettyprint li.L6,
+        .prettyprint li.L7,
+        .prettyprint li.L8,
+        .prettyprint li.L9 {list-style-type: decimal !important;
+        }
+        </style>
+
+
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Diffumist Box"><meta name="msapplication-starturl" content="https://diffumist.now.sh"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Diffumist Box"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="/manifest.json"><link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Diffumist Box">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="Github 加速汇总 | Diffumist Box"><meta property="og:site_name" content="Diffumist Box"><meta property="og:type" content="article"><meta property="og:url" content="https://diffumist.now.sh/posts/posts/Github-fast/"><meta property="og:locale" content="zh-CN"><meta name="description" content=".heimu { color: #000; background-color: #000; } .heimu:hover { color: #fff; }     一些让 Github 变快，想催人跑的技巧 - Diffumist - Diffumist Box"><meta name="keywords" content="Github, Cloudflare"><meta property="og:image" content="https://img.shields.io/badge/Now%20on-Cloudflare%20Workers-f38020?logo=cloudflare&logoColor=f38020"><meta property="article:published_time" content="2020-01-22T16:00:00.000Z"><meta property="article:modified_time" content="2020-01-22T16:00:00.000Z"><meta property="og:updated_time" content="2020-01-22T16:00:00.000Z"><meta property="article:author" content="Diffumist"><meta property="article:tag" content="Github, Cloudflare"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://diffumist.now.sh/posts/posts/Github-fast/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://diffumist.now.sh/posts/posts/Github-fast/",
+    "@type": "BlogPosting",
+    "logo": "https://diffumist.now.sh/img/android-chrome-192x192.png",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://diffumist.now.sh/posts/posts/Github-fast/"
+    },
+    "headline": "Github 加速汇总 | Diffumist Box",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://diffumist.now.sh/img/android-chrome-192x192.png"
+    },
+    
+    "datePublished": "2020-01-22T16:00:00.000Z",
+    "dateModified": "2020-01-22T16:00:00.000Z",
+    "author": {
+        "@type": "Person",
+        "name": "Diffumist",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://diffumist.now.sh/img/android-chrome-192x192.png"
+        },
+        "description": "Without the dark, we'd never see the stars"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Diffumist Box",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://diffumist.now.sh/img/android-chrome-192x192.png"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://diffumist.now.sh/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "Github, Cloudflare",
+    "description": ".heimu { color: #000; background-color: #000; } .heimu:hover { color: #fff; }     一些让 Github 变快，想催人跑的技巧 - Diffumist - Diffumist Box"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Diffumist Box</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Without the dark, we'd never see the stars
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+    
+        <a href="/about/" class="navbar-link">关于</a>
+    
+        <a href="/links/" class="navbar-link">友链</a>
+    
+    
+    
+        <a href="/atom.xml" target="_blank" class="navbar-link">RSS</a>
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">Github 加速汇总</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/android-chrome-192x192.png" src="/img/suka-lazyload.gif" alt="Diffumist's Avatar">
+        <span>2020-01-23</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+        
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用-Cloudflare-Workers-加速"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用 Cloudflare Workers 加速</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Jsdelivr-直接加速-repo-内文件"><span class="post-toc-number">2.</span> <span class="post-toc-text">Jsdelivr 直接加速 repo 内文件</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用代理加速"><span class="post-toc-number">3.</span> <span class="post-toc-text">使用代理加速</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTTPS-代理"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">HTTPS 代理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#针对-SSH-协议设置代理"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">针对 SSH 协议设置代理</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#修改-hosts"><span class="post-toc-number">4.</span> <span class="post-toc-text">修改 hosts</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        
+<style type="text/css">
+.heimu { color: #000; background-color: #000; }
+.heimu:hover { color: #fff; }
+</style>
+
+
+<blockquote>
+<p>一些让 Github 变快，<span class="heimu">想催人跑的技巧</span></p>
+</blockquote>
+<a id="more"></a>
+<h1 id="使用-Cloudflare-Workers-加速"><a href="#使用-Cloudflare-Workers-加速" class="headerlink" title="使用 Cloudflare Workers 加速"></a>使用 Cloudflare Workers 加速</h1><blockquote>
+<p>虽然经常被黑减速 CDN (指国内，对于国外 VPS 是福音，不得不说，cf 真好用.jpg</p>
+</blockquote>
+<p>利用 Cloudflare Workers 对 github release、archive 以及项目文件进行加速，并且支持 clone，部署无需服务器且自带 cdn</p>
+<p><a href="https://github.com/hunshcn/gh-proxy" target="_blank" rel="noopener">传送门</a><br><a href="https://github.diffumist.workers.dev/" target="_blank" rel="noopener">个人 Demo</a><br><a href="https://github.diffumist.workers.dev/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Now%20on-Cloudflare%20Workers-f38020?logo=cloudflare&logoColor=f38020" alt="Now on Cloudflare Workers"></a></p>
+<blockquote>
+<p>SSH 无法使用此法加速，请转至下文</p>
+</blockquote>
+<h1 id="Jsdelivr-直接加速-repo-内文件"><a href="#Jsdelivr-直接加速-repo-内文件" class="headerlink" title="Jsdelivr 直接加速 repo 内文件"></a>Jsdelivr 直接加速 repo 内文件</h1><p> jsdelivr 可以直接访问 GitHub 仓库内文件<br>举个例子，例如 oh-my-zsh </p>
+<pre><code class="shell"># 原脚本
+sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+# 加速下载
+sh -c &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ohmyzsh/ohmyzsh@master/tools/install.sh)&quot;</code></pre>
+<p>即格式为<br><a href="https://cdn.jsdelivr.net/gh/用户名/仓库名@分支/文件及路径" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/用户名/仓库名@分支/文件及路径</a><br>参考</p>
+<ul>
+<li><a href="https://github.com/jsdelivr/jsdelivr/blob/master/README.md" target="_blank" rel="noopener">https://github.com/jsdelivr/jsdelivr/blob/master/README.md</a></li>
+</ul>
+<h1 id="使用代理加速"><a href="#使用代理加速" class="headerlink" title="使用代理加速"></a>使用代理加速</h1><h2 id="HTTPS-代理"><a href="#HTTPS-代理" class="headerlink" title="HTTPS 代理"></a>HTTPS 代理</h2><p>git 命令并不会直接走全局代理，需要通过 git config 配置</p>
+<pre><code class="git">#  socks5 协议，1080 端口修改成自己的本地代理端口
+git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+git config --global https.https://github.com.proxy socks5://127.0.0.1:1080</code></pre>
+<p>其他命令：</p>
+<pre><code class="git"># 查看所有配置
+git config -l
+# 重置代理设置
+git config --global --unset http.proxy
+git config --global --unset https.proxy</code></pre>
+<p>也可手动修改<code>.gitconfig</code>文件</p>
+<h2 id="针对-SSH-协议设置代理"><a href="#针对-SSH-协议设置代理" class="headerlink" title="针对 SSH 协议设置代理"></a>针对 SSH 协议设置代理</h2><p>修改 <code>~/.ssh/config</code> 文件，根据相应端口添加以下内容</p>
+<pre><code class="git">Host github.com *.github.com
+    ProxyCommand connect -H 127.0.0.1:7890 %h %p
+    HostName %h
+    Port 22
+    User git
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes</code></pre>
+<blockquote>
+<p>有效性取决于代理速度</p>
+</blockquote>
+<h1 id="修改-hosts"><a href="#修改-hosts" class="headerlink" title="修改 hosts"></a>修改 hosts</h1><blockquote>
+<p>属于 <del>49 入国军</del>治标不治本行为</p>
+</blockquote>
+<p>由于 DNS 地址存在时间有效性，修改 hosts 前请自行查询 GitHub hosts<br>以下为完整参考列表（仅供参考，可能已过时）</p>
+<pre><code class="hosts"># GitHub Start
+13.250.177.223 github.com
+59.24.3.173 gist.github.com
+185.199.109.153 assets-cdn.github.com
+151.101.228.133 raw.githubusercontent.com
+151.101.228.133 gist.githubusercontent.com
+151.101.228.133 cloud.githubusercontent.com
+151.101.228.133 camo.githubusercontent.com
+151.101.228.133 avatars0.githubusercontent.com
+151.101.228.133 avatars1.githubusercontent.com
+151.101.228.133 avatars2.githubusercontent.com
+151.101.228.133 avatars3.githubusercontent.com
+151.101.228.133 avatars4.githubusercontent.com
+151.101.228.133 avatars5.githubusercontent.com
+151.101.228.133 avatars6.githubusercontent.com
+151.101.228.133 avatars7.githubusercontent.com
+151.101.228.133 avatars8.githubusercontent.com
+185.199.110.154 github.githubassets.com
+174.36.196.242 github.global.ssl.fastly.net
+# GitHub End</code></pre>
+<p>修改后刷新 DNS 缓存</p>
+
+                    </article>
+                    
+    <blockquote class="post-license">
+        <p>
+            <strong>本文作者&nbsp;:&nbsp;Diffumist</strong>
+            <br>
+            <strong>
+            
+                This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>
+            </strong>
+            <br>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://diffumist.now.sh/posts/posts/Github-fast/">https://diffumist.now.sh/posts/posts/Github-fast/</a>
+        </p>
+    </blockquote>
+
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-01-23");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2020-01-22T16:00:00.000Z" itemprop="datePublished">2020-01-23</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E6%8A%80%E6%9C%AF/'>技术</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/Github/" rel="tag">#&nbsp;Github</a>
+
+<a class="post-tags-list-item" href="/tags/Cloudflare/" rel="tag">#&nbsp;Cloudflare</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/posts/KDE-connect-win/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">尝试在 Win 下使用 KDE connect</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                        <div class="card-footer post-comment">
+                            <div id="disqus_thread"></div>
+
+<script id="js-disqusjs" src="https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.js" async></script>
+<script>
+document.getElementById('js-disqusjs').addEventListener('load', function () {
+    function loadDisqusJS() {
+        new DisqusJS({
+            shortname: 'misanzhiwu',
+            
+            siteName: 'Diffumist Box',
+            
+            identifier: 'https://diffumist.now.sh/posts/posts/Github-fast/',
+            url: 'https://diffumist.now.sh/posts/posts/Github-fast/',
+            api: 'https://disqus.diffumist.workers.dev/api/',
+            apikey: 'RUHWQkFWwqH0wRK4w56AN3s8EWy9NWkpcQFLWR8sRklM4vKJ7AKbdVCH5pfR3D21',
+            
+            admin: 'Diffumist',
+            
+            
+            adminLabel: 'Diffumist'
+            
+        })
+    }
+    if (document.readyState === 'complete') {
+        loadDisqusJS();
+    } else {
+        window.addEventListener('load', loadDisqusJS);
+    }
+});
+</script>
+
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://diffumist.now.sh">Diffumist Box</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2019;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+
+    <!-- prettify -->
+    
+    
+        <script src="/lib/prettify/prettify.js"></script>
+    
+    <script>
+        for (var i = 0; i < (document.querySelectorAll('pre') || []).length; i += 1) {
+            document.querySelectorAll('pre')[i].classList.add('prettyprint');
+            document.querySelectorAll('pre')[i].classList.add('linenums');
+        }
+        prettyPrint();
+    </script>
+
+
+
+
+<!-- Comment -->
+
+    
+        <!-- No need for DisqusJS -->
+    
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

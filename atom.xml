@@ -44,6 +44,29 @@
   </entry>
   
   <entry>
+    <title>青年大学习的特殊姿势水平</title>
+    <link href="https://diffumist.now.sh/posts/leeks-learn-patch/"/>
+    <id>https://diffumist.now.sh/posts/leeks-learn-patch/</id>
+    <published>2020-05-02T16:00:00.000Z</published>
+    <updated>2020-05-02T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文章仅限“<strong>学习</strong>”目的，请勿用作其他用途（逃</p><a id="more"></a><blockquote><p>青年大学习算是学习强国的低配版，定期观看一些视频“学习”，虽然时间不长，但是没有进度条确实引起不适，因此网络上也有一些操作来亮出进度条，iOS有状态栏进度条，Android也可通过分屏来调用微信的视频播放组件来曲线救国。这里在此不再赘述。这里试图从代码上探讨一些特殊的姿势水平。</p></blockquote><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p><code>Chrome Dev Tools</code></p><h1 id="槽点"><a href="#槽点" class="headerlink" title="槽点"></a>槽点</h1><p>所有判分逻辑全在前端完成，而且除视频外基本上全是图片，进入页面即加载全部资源，结束页面也是一个静态的图片资源，除此之外2020年了还是 <code>HTTP</code> ，</p><img src="https://cdn.misanzhiwu.top/2020/03/02/303c0728c7d04.png" style="zoom:50%;" /><p>由 JavaScript 来控制播放，直接写在 script 标签中，参考代码，在 console 输入两句 js 就可以实现跳过并显示完成页面</p><img src="https://cdn.misanzhiwu.top/2020/03/02/d5222f95a028e.png" style="zoom:50%;" /><pre><code class="JavaScript">$(&#39;.section3&#39;).addClass(&#39;topindex1&#39;);$(&#39;.section4,#Cvideo&#39;).hide();</code></pre><ul><li><p>在微信中可以用 tbs 的 vConsole 来输入（iOS不支持</p></li><li><p>微信打开 <a href="http://debugmm.qq.com/?forcex5=true" target="_blank" rel="noopener">http://debugmm.qq.com/?forcex5=true</a> 以强制开启 X5 内核</p></li><li><p>打开 <a href="http://debugx5.qq.com/" target="_blank" rel="noopener">http://debugx5.qq.com</a> 打开下面<code>vConsole调试功能</code>一项，就可以调试了 </p></li></ul><img src="https://cdn.misanzhiwu.top/2020/03/02/6819a3db69b19.jpg" style="zoom:50%;" /><ul><li>回到青年大学习，点击左下角 vConsole 在 command 输入以下代码，点击OK</li></ul><pre><code class="JavaScript">$(&#39;.section3&#39;).addClass(&#39;topindex1&#39;);$(&#39;.section4,#Cvideo&#39;).hide();__vconsole.style.display=&quot;none&quot;; </code></pre><img src="https://cdn.misanzhiwu.top/2020/03/02/5b50cd19bff29.jpg" style="zoom: 33%;" /><h1 id="此外"><a href="#此外" class="headerlink" title="此外"></a>此外</h1><p>值得怀疑的一点是（JS小白），这个界面没有将视频播放和做题记录上传服务器，个人信息在之前填写信息表后就已经上传到了服务器，尝试在答题界面抓了一下包，发现是一些中间加载的视频资源</p><p>也就是说<strong>根本不需要跳过</strong></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul><li><a href="https://hefang.link/article/how-to-debug-in-wechat-webview.html" target="_blank" rel="noopener">https://hefang.link/article/how-to-debug-in-wechat-webview.html</a></li><li><a href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging?hl=zh-cn" target="_blank" rel="noopener">https://developers.google.com/web/tools/chrome-devtools/remote-debugging?hl=zh-cn</a></li><li><a href="https://ringotc.github.io/2019/10/15/qndaxuexi/" target="_blank" rel="noopener">https://ringotc.github.io/2019/10/15/qndaxuexi/</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;本文章仅限“&lt;strong&gt;学习&lt;/strong&gt;”目的，请勿用作其他用途（逃&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="https://diffumist.now.sh/categories/%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="JavaScript" scheme="https://diffumist.now.sh/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>音乐流媒体服务的碎碎念</title>
     <link href="https://diffumist.now.sh/posts/posts/music-platform-thoughts/"/>
     <id>https://diffumist.now.sh/posts/posts/music-platform-thoughts/</id>
@@ -65,29 +88,6 @@
     
     
       <category term="music" scheme="https://diffumist.now.sh/tags/music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>青年大学习的特殊姿势水平</title>
-    <link href="https://diffumist.now.sh/posts/leeks-learn-patch/"/>
-    <id>https://diffumist.now.sh/posts/leeks-learn-patch/</id>
-    <published>2020-05-02T16:00:00.000Z</published>
-    <updated>2020-05-02T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文章仅限“<strong>学习</strong>”目的，请勿用作其他用途（逃</p><a id="more"></a><blockquote><p>青年大学习算是学习强国的低配版，定期观看一些视频“学习”，虽然时间不长，但是没有进度条确实引起不适，因此网络上也有一些操作来亮出进度条，iOS有状态栏进度条，Android也可通过分屏来调用微信的视频播放组件来曲线救国。这里在此不再赘述。这里试图从代码上探讨一些特殊的姿势水平。</p></blockquote><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p><code>Chrome Dev Tools</code></p><h1 id="槽点"><a href="#槽点" class="headerlink" title="槽点"></a>槽点</h1><p>所有判分逻辑全在前端完成，而且除视频外基本上全是图片，进入页面即加载全部资源，结束页面也是一个静态的图片资源，除此之外2020年了还是 <code>HTTP</code> ，</p><img src="https://cdn.misanzhiwu.top/2020/03/02/303c0728c7d04.png" style="zoom:50%;" /><p>由 JavaScript 来控制播放，直接写在 script 标签中，参考代码，在 console 输入两句 js 就可以实现跳过并显示完成页面</p><img src="https://cdn.misanzhiwu.top/2020/03/02/d5222f95a028e.png" style="zoom:50%;" /><pre><code class="JavaScript">$(&#39;.section3&#39;).addClass(&#39;topindex1&#39;);$(&#39;.section4,#Cvideo&#39;).hide();</code></pre><ul><li><p>在微信中可以用 tbs 的 vConsole 来输入（iOS不支持</p></li><li><p>微信打开 <a href="http://debugmm.qq.com/?forcex5=true" target="_blank" rel="noopener">http://debugmm.qq.com/?forcex5=true</a> 以强制开启 X5 内核</p></li><li><p>打开 <a href="http://debugx5.qq.com/" target="_blank" rel="noopener">http://debugx5.qq.com</a> 打开下面<code>vConsole调试功能</code>一项，就可以调试了 </p></li></ul><img src="https://cdn.misanzhiwu.top/2020/03/02/6819a3db69b19.jpg" style="zoom:50%;" /><ul><li>回到青年大学习，点击左下角 vConsole 在 command 输入以下代码，点击OK</li></ul><pre><code class="JavaScript">$(&#39;.section3&#39;).addClass(&#39;topindex1&#39;);$(&#39;.section4,#Cvideo&#39;).hide();__vconsole.style.display=&quot;none&quot;; </code></pre><img src="https://cdn.misanzhiwu.top/2020/03/02/5b50cd19bff29.jpg" style="zoom: 33%;" /><h1 id="此外"><a href="#此外" class="headerlink" title="此外"></a>此外</h1><p>值得怀疑的一点是（JS小白），这个界面没有将视频播放和做题记录上传服务器，个人信息在之前填写信息表后就已经上传到了服务器，尝试在答题界面抓了一下包，发现是一些中间加载的视频资源</p><p>也就是说<strong>根本不需要跳过</strong></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul><li><a href="https://hefang.link/article/how-to-debug-in-wechat-webview.html" target="_blank" rel="noopener">https://hefang.link/article/how-to-debug-in-wechat-webview.html</a></li><li><a href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging?hl=zh-cn" target="_blank" rel="noopener">https://developers.google.com/web/tools/chrome-devtools/remote-debugging?hl=zh-cn</a></li><li><a href="https://ringotc.github.io/2019/10/15/qndaxuexi/" target="_blank" rel="noopener">https://ringotc.github.io/2019/10/15/qndaxuexi/</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;本文章仅限“&lt;strong&gt;学习&lt;/strong&gt;”目的，请勿用作其他用途（逃&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="开发" scheme="https://diffumist.now.sh/categories/%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="JavaScript" scheme="https://diffumist.now.sh/tags/JavaScript/"/>
     
   </entry>
   
