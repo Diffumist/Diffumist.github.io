@@ -6,6 +6,7 @@ layout: about
 thumbnail:
 toc: false
 comments: false
+hide_license: true
 ---
 
 ## About Me

@@ -16,6 +16,7 @@ urlname: KDE-connect-win
 > 先不负责任的复制粘贴（（（
 
 KDE Connect 是一个使您的所有设备能够相互通信的项目。以下是KDE Connect可以执行的一些操作：
+<!-- more -->
 
 - 在台式计算机上接收电话通知并回复邮件
 - 通过手机控制桌面上播放的音乐
@@ -28,7 +29,7 @@ KDE Connect 是一个使您的所有设备能够相互通信的项目。以下�
 - 通过手机控制桌面的音量
 
 KDE Connect 是一个跨平台项目，兼容 Linux Android macOS Windows ，在 Linux 下可以做到开箱即用，在 Windows 下需要一些操作才能使其正常运行，下面简单记录一下
-<!-- more -->
+
 # 下载 KDE Connect for Windows
 
 下载地址 ：https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/

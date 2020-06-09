@@ -11,6 +11,8 @@ toc: true
 thumbnail:
 urlname: posts/Github-fast
 ---
+> 一些让 Github 变快，{% raw %}<span class="heimu">想催人跑的技巧</span>{% endraw %}
+<!--more-->
 {% raw %}
 <style type="text/css">
 .heimu { color: #000; background-color: #000; }
@@ -18,10 +20,7 @@ urlname: posts/Github-fast
 </style>
 {% endraw %}
 
-> 一些让 Github 变快，{% raw %}<span class="heimu">想催人跑的技巧</span>{% endraw %}
 
-
-<!--more-->
 # 使用 Cloudflare Workers 加速
 > 虽然经常被黑减速 CDN (指国内，对于国外 VPS 是福音，不得不说，cf 真好用.jpg
 

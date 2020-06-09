@@ -10,9 +10,9 @@ toc: true
 thumbnail:
 urlname: Linux-face
 ---
-Howdy 为 Linux 提供了 Windows Hello™ 风格的身份验证。使用 IR 摄像头，结合面部识别技术来证明你的身份，配合 PAM 可以简单实现 sudo ,system-auth, lockscreen 等无密码验证，下面说一下在 Arch 的简单配置，不使用 Arch 系的建议左转 GitHub https://github.com/boltgolt/howdy 或者加入我们 Arch 邪教 (不是
+Howdy 为 Linux 提供了 Windows Hello™ 风格的身份验证。<!--more-->使用 IR 摄像头，结合面部识别技术来证明你的身份，配合 PAM 可以简单实现 sudo ,system-auth, lockscreen 等无密码验证，下面说一下在 Arch 的简单配置，不使用 Arch 系的建议左转 GitHub https://github.com/boltgolt/howdy 或者加入我们 Arch 邪教 (不是
 什么，你说你是 Windows 用户？那 WSL 也要记得装 [Arch](https://github.com/yuk7/ArchWSL/releases) 哦（逃
-<!--more-->
+
 > 当然，少输密码一时爽，`rm`火葬场，建议先写一个`alias`防止出现意外“故事” (
 
 Howdy 只能实现 2D 人脸识别，无法实现 Windows Hello 的生物识别，所以对于注重安全性的不建议安装
