@@ -27,6 +27,11 @@
 <!-- analytics -->
 
 
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
 
 
 
@@ -115,7 +120,7 @@
         background: #f8f9fa;
         opacity: .85;
     }
-</style><link rel="stylesheet" href="/css/style.min.css">
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@master/source/css/style.min.css">
 
 
     
@@ -132,7 +137,7 @@
 
     <!-- Prettify Theme -->
     
-    <link rel="preload" href="/css/highlight/atom-one-light.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/atom-one-light.min.css"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@master/source/css/highlight/atom-one-light.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@master/source/css/highlight/atom-one-light.min.css"></noscript>
 
 
 
@@ -150,7 +155,7 @@
     <link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Diffumist Box"><meta name="msapplication-starturl" content="https://diffumist.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Diffumist Box"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="/manifest.json"><link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Diffumist Box">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="尝试在 Win 下使用 KDE connect | Diffumist Box"><meta property="og:site_name" content="Diffumist Box"><meta property="og:type" content="article"><meta property="og:url" content="https://diffumist.github.io/posts/KDE-connect-win/"><meta property="og:locale" content="zh-CN"><meta name="description" content="关于KDE Connect 先不负责任的复制粘贴（（（  KDE Connect 是一个使您的所有设备能够相互通信的项目。以下是KDE Connect可以执行的一些操作：  在台式计算机上接收电话通知并回复邮件 通过手机控制桌面上播放的音乐 将手机用作桌面的遥控器 从连接的设备在 PC 上运行预定义的命令 从桌面检查手机电池电量 拨打电话以帮助找到它 在设备之间共享文件和链接 从桌面浏览手机 通过 - Diffumist - Diffumist Box"><meta name="keywords" content="Linux, KDE"><meta property="article:published_time" content="2020-03-31T16:00:00.000Z"><meta property="article:modified_time" content="2020-03-31T16:00:00.000Z"><meta property="og:updated_time" content="2020-03-31T16:00:00.000Z"><meta property="article:author" content="Diffumist"><meta property="article:tag" content="Linux, KDE"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="尝试在 Win 下使用 KDE connect | Diffumist Box"><meta property="og:site_name" content="Diffumist Box"><meta property="og:type" content="article"><meta property="og:url" content="https://diffumist.github.io/posts/KDE-connect-win/"><meta property="og:locale" content="zh-CN"><meta name="description" content="关于KDE Connect 先不负责任的复制粘贴（（（  KDE Connect 是一个使您的所有设备能够相互通信的项目。以下是KDE Connect可以执行的一些操作： - Diffumist - Diffumist Box"><meta name="keywords" content="Linux, KDE"><meta property="article:published_time" content="2020-03-31T16:00:00.000Z"><meta property="article:modified_time" content="2020-03-31T16:00:00.000Z"><meta property="og:updated_time" content="2020-03-31T16:00:00.000Z"><meta property="article:author" content="Diffumist"><meta property="article:tag" content="Linux, KDE"><meta name="twitter:card" content="summary">
 
     
 
@@ -161,6 +166,25 @@
 
     <!-- ### Analytics ### -->
     
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-153918548-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153918548-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-153918548-1');
+</script>
+
 
 
 
@@ -217,7 +241,7 @@
     },
     
     "keywords": "Linux, KDE",
-    "description": "关于KDE Connect 先不负责任的复制粘贴（（（  KDE Connect 是一个使您的所有设备能够相互通信的项目。以下是KDE Connect可以执行的一些操作：  在台式计算机上接收电话通知并回复邮件 通过手机控制桌面上播放的音乐 将手机用作桌面的遥控器 从连接的设备在 PC 上运行预定义的命令 从桌面检查手机电池电量 拨打电话以帮助找到它 在设备之间共享文件和链接 从桌面浏览手机 通过 - Diffumist - Diffumist Box"
+    "description": "关于KDE Connect 先不负责任的复制粘贴（（（  KDE Connect 是一个使您的所有设备能够相互通信的项目。以下是KDE Connect可以执行的一些操作： - Diffumist - Diffumist Box"
 }
 </script>
 
@@ -306,6 +330,8 @@
 <p>先不负责任的复制粘贴（（（</p>
 </blockquote>
 <p>KDE Connect 是一个使您的所有设备能够相互通信的项目。以下是KDE Connect可以执行的一些操作：</p>
+<a id="more"></a>
+
 <ul>
 <li>在台式计算机上接收电话通知并回复邮件</li>
 <li>通过手机控制桌面上播放的音乐</li>
@@ -318,7 +344,6 @@
 <li>通过手机控制桌面的音量</li>
 </ul>
 <p>KDE Connect 是一个跨平台项目，兼容 Linux Android macOS Windows ，在 Linux 下可以做到开箱即用，在 Windows 下需要一些操作才能使其正常运行，下面简单记录一下</p>
-<a id="more"></a>
 <h1 id="下载-KDE-Connect-for-Windows"><a href="#下载-KDE-Connect-for-Windows" class="headerlink" title="下载 KDE Connect for Windows"></a>下载 KDE Connect for Windows</h1><p>下载地址 ：<a href="https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/" target="_blank" rel="noopener">https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/</a></p>
 <h1 id="问题复现"><a href="#问题复现" class="headerlink" title="问题复现"></a>问题复现</h1><p>先手动进入 KDE Connect 的安装目录</p>
 <p>目前 KDE Connect 的 win 版本构建存在一些问题，手动运行 <code>kdeconnect-indicator.exe·</code>并不能正常使用，需要先运行<code>kdeconnectd.exe</code>，才能正常运行<code>kdeconnect-indicator.exe</code>，然而<code>kdeconnectd.exe</code>是一个控制台程序，尝试简单写了一个<code>VBScript</code> 后发现仍然会出现概率性连接失效问题，需要手动停止进程重新打开才能正常运行</p>
@@ -343,7 +368,7 @@
             <br>
             <strong>
             
-                This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>
+                本文使用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank">CC BY-NC-SA 3.0 协议</a>
             </strong>
             <br>
             <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://diffumist.github.io/posts/KDE-connect-win/">https://diffumist.github.io/posts/KDE-connect-win/</a>

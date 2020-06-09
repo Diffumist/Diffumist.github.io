@@ -27,6 +27,11 @@
 <!-- analytics -->
 
 
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
 
 
 
@@ -115,7 +120,7 @@
         background: #f8f9fa;
         opacity: .85;
     }
-</style><link rel="stylesheet" href="/css/style.min.css">
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@master/source/css/style.min.css">
 
 
     
@@ -155,6 +160,25 @@
 
     <!-- ### Analytics ### -->
     
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-153918548-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153918548-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-153918548-1');
+</script>
+
 
 
 
@@ -227,12 +251,6 @@
 <p class="mb-0 card-body">
     
         
-.heimu { color: #000; background-color: #000; }
-.heimu:hover { color: #fff; }
-
-
-
-
 一些让 Github 变快，想催人跑的技巧
 
     <a href="/posts/posts/Github-fast/">阅读全文</a>
