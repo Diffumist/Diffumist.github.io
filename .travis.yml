@@ -1,0 +1,30 @@
+language: node_js	
+node_js: stable	
+dist: xenial	
+node_js:	
+ - 12	
+branches:	
+  only:	
+  - hexo	
+before_install: 	
+  - export TZ='Asia/Shanghai' # 配置时区为东八区 UTC+8	
+  - npm install hexo-cli # 安装 hexo	
+install:	
+- yarn install	
+script:	
+- hexo clean	
+- hexo generate	
+env:	
+  global:	
+    secure: hash value	
+deploy:	
+  provider: pages	
+  skip_cleanup: true # 跳过清理	
+  local_dir: public # 需要推送到 GitHub 的静态文件目录 	
+  name: $GIT_NAME # 用户名变量	
+  email: $GIT_EMAIL # 用户邮箱变量	
+  github_token: $GH_TOKEN # GitHub Token 变量	
+  keep-history: true # 保持推送记录，以增量提交的方式	
+  target-branch: master # 推送的目标分支 local_dir->>master 分支	
+  on:	
+    branch: hexo # 工作分支
