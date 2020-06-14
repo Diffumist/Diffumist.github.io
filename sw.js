@@ -2,8 +2,16 @@ var APP_PREFIX = 'Diffumist_Box' // Identifier for this app (this needs to be co
 var VERSION = '1.0' // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [ // Add URL you want to cache in this list.
-    '/', // If you have separate JS/CSS files,
-    '/index.html' // add path to those files here
+    '/js', // If you have separate JS/CSS files,
+    '/index.html', // add path to those files here
+    '/css',
+    '/lib',
+    '/atom.xml',
+    '/opensearch.xml',
+    '/manifest.json',
+    '/links',
+    '/img',
+    '/categories'
 ]
 
 // Respond with cached resources
