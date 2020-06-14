@@ -1,9 +1,9 @@
-name: github pages
+name: Build
 
 on:
   push:
     branches:
-      - master
+      - hexo
 
 jobs:
   deploy:
@@ -16,20 +16,17 @@ jobs:
         with:
           node-version: '12.x'
 
-      - name: Cache dependencies
-        uses: actions/cache@v1
+      - uses: borales/actions-yarn@v2.0.0
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cmd: install # will run `yarn install` command
 
-      - run: npm ci
-      - run: npm run build
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build # will run `yarn build` command
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           publish_branch: master
           publish_dir: ./public
