@@ -18,7 +18,7 @@ urlname: clean-google
 
 # 内容农场是什么
 
-> 参见[Wiki]([https://zh.wikipedia.org/wiki/%E5%85%A7%E5%AE%B9%E8%BE%B2%E5%A0%B4](https://zh.wikipedia.org/wiki/內容農場))
+> 参见[Wiki](https://zh.wikipedia.org/wiki/%E5%85%A7%E5%AE%B9%E8%BE%B2%E5%A0%B4)
 
 
 内容农场是为赚取广告收益而不择手段的网站，他们会雇用写手或编写程序四处抄袭、剪贴、拼凑出大量品质不稳定的网络文章。他们用标题吸引阅读，同时以人工和机器堆砌热门关键词欺骗搜索引擎，久之搜索结果前部分塞满了他们的垃圾，真正有质量的相关资讯则被埋没
