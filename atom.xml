@@ -5,9 +5,9 @@
   <subtitle>只是一个 Box 而已</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://diffumist.github.io/"/>
+  <link href="https://diffumist.me/"/>
   <updated>2020-05-15T00:00:00.000Z</updated>
-  <id>https://diffumist.github.io/</id>
+  <id>https://diffumist.me/</id>
   
   <author>
     <name>Diffumist</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>WSL2 踩坑简单记录</title>
-    <link href="https://diffumist.github.io/posts/WSL2-config-easy/"/>
-    <id>https://diffumist.github.io/posts/WSL2-config-easy/</id>
+    <link href="https://diffumist.me/posts/WSL2-config-easy/"/>
+    <id>https://diffumist.me/posts/WSL2-config-easy/</id>
     <published>2020-05-15T00:00:00.000Z</published>
     <updated>2020-05-15T00:00:00.000Z</updated>
     
@@ -34,19 +34,19 @@
     </summary>
     
     
-      <category term="开发" scheme="https://diffumist.github.io/categories/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://diffumist.me/categories/%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Linux" scheme="https://diffumist.github.io/tags/Linux/"/>
+      <category term="Linux" scheme="https://diffumist.me/tags/Linux/"/>
     
-      <category term="WSL" scheme="https://diffumist.github.io/tags/WSL/"/>
+      <category term="WSL" scheme="https://diffumist.me/tags/WSL/"/>
     
   </entry>
   
   <entry>
     <title>青年大学习的特殊姿势水平</title>
-    <link href="https://diffumist.github.io/posts/leeks-learn-patch/"/>
-    <id>https://diffumist.github.io/posts/leeks-learn-patch/</id>
+    <link href="https://diffumist.me/posts/leeks-learn-patch/"/>
+    <id>https://diffumist.me/posts/leeks-learn-patch/</id>
     <published>2020-05-03T00:00:00.000Z</published>
     <updated>2020-05-03T00:00:00.000Z</updated>
     
@@ -59,17 +59,17 @@
     </summary>
     
     
-      <category term="开发" scheme="https://diffumist.github.io/categories/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://diffumist.me/categories/%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="JavaScript" scheme="https://diffumist.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://diffumist.me/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>音乐流媒体服务的碎碎念</title>
-    <link href="https://diffumist.github.io/posts/posts/music-platform-thoughts/"/>
-    <id>https://diffumist.github.io/posts/posts/music-platform-thoughts/</id>
+    <link href="https://diffumist.me/posts/posts/music-platform-thoughts/"/>
+    <id>https://diffumist.me/posts/posts/music-platform-thoughts/</id>
     <published>2020-05-03T00:00:00.000Z</published>
     <updated>2020-05-03T00:00:00.000Z</updated>
     
@@ -84,17 +84,17 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://diffumist.github.io/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://diffumist.me/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="music" scheme="https://diffumist.github.io/tags/music/"/>
+      <category term="music" scheme="https://diffumist.me/tags/music/"/>
     
   </entry>
   
   <entry>
     <title>净化 Google</title>
-    <link href="https://diffumist.github.io/posts/clean-google/"/>
-    <id>https://diffumist.github.io/posts/clean-google/</id>
+    <link href="https://diffumist.me/posts/clean-google/"/>
+    <id>https://diffumist.me/posts/clean-google/</id>
     <published>2020-04-20T00:00:00.000Z</published>
     <updated>2020-04-20T00:00:00.000Z</updated>
     
@@ -109,17 +109,17 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://diffumist.github.io/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://diffumist.me/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="Chrome" scheme="https://diffumist.github.io/tags/Chrome/"/>
+      <category term="Chrome" scheme="https://diffumist.me/tags/Chrome/"/>
     
   </entry>
   
   <entry>
     <title>Linux 下的人脸识别登录</title>
-    <link href="https://diffumist.github.io/posts/Linux-face/"/>
-    <id>https://diffumist.github.io/posts/Linux-face/</id>
+    <link href="https://diffumist.me/posts/Linux-face/"/>
+    <id>https://diffumist.me/posts/Linux-face/</id>
     <published>2020-04-11T00:00:00.000Z</published>
     <updated>2020-04-11T00:00:00.000Z</updated>
     
@@ -132,17 +132,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://diffumist.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://diffumist.me/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Linux" scheme="https://diffumist.github.io/tags/Linux/"/>
+      <category term="Linux" scheme="https://diffumist.me/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>尝试在 Win 下使用 KDE connect</title>
-    <link href="https://diffumist.github.io/posts/KDE-connect-win/"/>
-    <id>https://diffumist.github.io/posts/KDE-connect-win/</id>
+    <link href="https://diffumist.me/posts/KDE-connect-win/"/>
+    <id>https://diffumist.me/posts/KDE-connect-win/</id>
     <published>2020-04-01T00:00:00.000Z</published>
     <updated>2020-04-01T00:00:00.000Z</updated>
     
@@ -158,19 +158,19 @@
     </summary>
     
     
-      <category term="开发" scheme="https://diffumist.github.io/categories/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://diffumist.me/categories/%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Linux" scheme="https://diffumist.github.io/tags/Linux/"/>
+      <category term="Linux" scheme="https://diffumist.me/tags/Linux/"/>
     
-      <category term="KDE" scheme="https://diffumist.github.io/tags/KDE/"/>
+      <category term="KDE" scheme="https://diffumist.me/tags/KDE/"/>
     
   </entry>
   
   <entry>
     <title>Github 加速汇总</title>
-    <link href="https://diffumist.github.io/posts/posts/Github-fast/"/>
-    <id>https://diffumist.github.io/posts/posts/Github-fast/</id>
+    <link href="https://diffumist.me/posts/posts/Github-fast/"/>
+    <id>https://diffumist.me/posts/posts/Github-fast/</id>
     <published>2020-01-23T00:00:00.000Z</published>
     <updated>2020-01-23T00:00:00.000Z</updated>
     
@@ -185,12 +185,12 @@
     </summary>
     
     
-      <category term="技术" scheme="https://diffumist.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://diffumist.me/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Github" scheme="https://diffumist.github.io/tags/Github/"/>
+      <category term="Github" scheme="https://diffumist.me/tags/Github/"/>
     
-      <category term="Cloudflare" scheme="https://diffumist.github.io/tags/Cloudflare/"/>
+      <category term="Cloudflare" scheme="https://diffumist.me/tags/Cloudflare/"/>
     
   </entry>
   
