@@ -1,9 +1,9 @@
 {
     "name": "Diffumist Box",
     "short_name": "Diffumist Box",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
-    "display": "browser",
+    "theme_color": "#f8f9fa",
+    "background_color": "#f8f9fa",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "icons": [
@@ -30,6 +30,11 @@
         {
             "src": "img/android-chrome-384x384.png",
             "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "img/android-chrome-384x384.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]

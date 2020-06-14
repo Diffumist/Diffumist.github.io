@@ -24,7 +24,7 @@ M$ 在 WSL2 采用了 Hyper-V ，原先的 rootfs 变成了 vhdx ，Docker 支�
   ```powershell
   wsl --list --verbose
   ```
-  ![](https://cdn.misanzhiwu.top/2020/05/15/6530d2ff73cee.png)
+  ![](/img/old/6530d2ff73cee.png)
 
 ## 关于 systemd 支持
 
