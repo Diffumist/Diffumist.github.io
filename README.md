@@ -1,5 +1,5 @@
 # Diffumist Box	
-This is my own blog, pre-rendered using `hexo`, built automatically using `travis-ci`, deployed on `Github pages`	
+This is my own blog, pre-rendered using `hexo`, built automatically using `Github Actions`, deployed on `Github pages`	
 
 ![Build](https://github.com/Diffumist/diffumist.github.io/workflows/Build/badge.svg)	
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Diffumist/diffumist.github.io/hexo)	
