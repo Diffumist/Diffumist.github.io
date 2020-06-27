@@ -6,7 +6,7 @@ tags:
 - Linux
 - WSL
 categories: 
-- 开发
+- 技术
 toc: true
 thumbnail:
 urlname: WSL2-config-easy
@@ -37,7 +37,7 @@ M$ 在 WSL2 采用了 Hyper-V ，原先的 rootfs 变成了 vhdx ，Docker 支�
 
  - WSL2 是使用 Hyper-V 虚拟机实现的，不能跟 Windows 共享同一个 localhost ，且重启 ip 都会变化
 
- - 自行安装 proxychain-ng 后，向 shell 的配置文件（如 `.bashrc，.zshrc，.fishrc `等）添加以下命令（端口自行修改）
+ - 自行安装 proxychain-ng 后，向 shell 的配置文件（如 `.bashrc`、`.zshrc`、`.fishrc`等）添加以下命令（端口自行修改）
 
  ```shell
 export WIN_IP=`cat /etc/resolv.conf | grep nameserver | awk '{print $2}'`
@@ -49,18 +49,18 @@ sed -i '/socks5.*/d' ~/.curlrc
 echo 'socks5='${WIN_IP}':7891' >> ~/.curlrc
 echo -e '[ProxyList]\nsocks5 '${WIN_IP}' 7891' >> ~/.proxychains.conf
 alias pc='proxychains4 -q -f ~/.proxychains.conf'
-  ```
+ ```
 
-   > 基于 https://www.cnblogs.com/zsmumu/p/12416159.html 修改
+   > 参考 https://www.cnblogs.com/zsmumu/p/12416159.html 
 
 
 ## 其他
 
  - 虽然 WSL2 本身 I/O 得到提升但跨系统 I/O 变差，可以在跨系统 I/O 时切换到 WSL1
  - 从资源管理器访问 WSL 文件，地址栏输入 `\\wsl$\` ，在 Windows 19603 及以后版本已经集成在资源管理器中
- - [VirtualBox](https://www.virtualbox.org/wiki/Changelog-6.0) 和 [VMware](https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html) 都发布了支持 Hyper-V 和 WSL2 的版本 
+ - [VirtualBox](https://www.virtualbox.org/wiki/Changelog-6.0) 和 [VMware](https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html) 都发布了支持 Hyper-V 和 WSL2 的版本，兼容性不是问题
  - LxRunOffline 不支持操作 WSL2 需要先转换为 WSL1
- - 进行系统全量备份时切换为 WSL 1 ，因原先的 rootfs 变成了 vhdx ，加之 LxRunOffline 还不支持备份还原 WSL2 容易丢失 WSL（
+ - 进行系统全量备份时建议切换为 WSL 1 ，因容易丢失 WSL，加之原先的 rootfs 变成了 vhdx ，而 LxRunOffline 还不支持备份还原 WSL2
 
 ## 后记
  - M$ 在 Build 2020 全球开发者大会上，发布了 Windows Terminal 1.0 正式版，包管理器 winget 的预览版，WSL2 也将很快支持 GPU 和 Linux GUI，Windows 10：可能是对新手最友好的 Linux 发行版？

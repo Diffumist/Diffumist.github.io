@@ -6,7 +6,7 @@ tags:
 - KDE
 - Linux
 categories: 
-- 开发
+- 技术
 toc: true
 thumbnail:
 urlname: KDE-connect-win

@@ -34,10 +34,10 @@ yay -S howdy
 下面是需要编译的几个应用包
 
 ```shell
-pam-python                       
-python-dlib               
-python-face_recognition_models  
-python-face_recognition     
+pam-python
+python-dlib
+python-face_recognition_models
+python-face_recognitio
 howdy
 ```
 
