@@ -321,7 +321,7 @@
         <span>2020-05-15</span>
         
             <span class="suka-devide-dot"></span>
-            <a class="category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
+            <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
         
         
         
@@ -356,20 +356,20 @@
 <h2 id="WSL2-的代理设置"><a href="#WSL2-的代理设置" class="headerlink" title="WSL2 的代理设置"></a>WSL2 的代理设置</h2><ul>
 <li><p>WSL2 是使用 Hyper-V 虚拟机实现的，不能跟 Windows 共享同一个 localhost ，且重启 ip 都会变化</p>
 </li>
-<li><p>自行安装 proxychain-ng 后，向 shell 的配置文件（如 <code>.bashrc，.zshrc，.fishrc</code>等）添加以下命令（端口自行修改）</p>
+<li><p>自行安装 proxychain-ng 后，向 shell 的配置文件（如 <code>.bashrc</code>、<code>.zshrc</code>、<code>.fishrc</code>等）添加以下命令（端口自行修改）</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export WIN_IP=`cat /etc/resolv.conf | grep nameserver | awk '&#123;print $2&#125;'`</span><br><span class="line">cp -f /etc/proxychains.conf ~/.proxychains.conf</span><br><span class="line">sed -i '/\[ProxyList\]/,$d' ~/.proxychains.conf</span><br><span class="line">sed -i '/\[http]/,$d' ~/.gitconfig</span><br><span class="line">echo -e '[http]\nproxy=socks5://'$&#123;WIN_IP&#125;':7891\n[https]\nproxy=socks5://'$&#123;WIN_IP&#125;':7891' &gt;&gt; ~/.gitconfig</span><br><span class="line">sed -i '/socks5.*/d' ~/.curlrc</span><br><span class="line">echo 'socks5='$&#123;WIN_IP&#125;':7891' &gt;&gt; ~/.curlrc</span><br><span class="line">echo -e '[ProxyList]\nsocks5 '$&#123;WIN_IP&#125;' 7891' &gt;&gt; ~/.proxychains.conf</span><br><span class="line">alias pc='proxychains4 -q -f ~/.proxychains.conf'</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>基于 <a href="https://www.cnblogs.com/zsmumu/p/12416159.html" target="_blank" rel="noopener">https://www.cnblogs.com/zsmumu/p/12416159.html</a> 修改</p>
+<p>参考 <a href="https://www.cnblogs.com/zsmumu/p/12416159.html" target="_blank" rel="noopener">https://www.cnblogs.com/zsmumu/p/12416159.html</a> </p>
 </blockquote>
 </li>
 </ul>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
 <li>虽然 WSL2 本身 I/O 得到提升但跨系统 I/O 变差，可以在跨系统 I/O 时切换到 WSL1</li>
 <li>从资源管理器访问 WSL 文件，地址栏输入 <code>\\wsl$\</code> ，在 Windows 19603 及以后版本已经集成在资源管理器中</li>
-<li><a href="https://www.virtualbox.org/wiki/Changelog-6.0" target="_blank" rel="noopener">VirtualBox</a> 和 <a href="https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html" target="_blank" rel="noopener">VMware</a> 都发布了支持 Hyper-V 和 WSL2 的版本 </li>
+<li><a href="https://www.virtualbox.org/wiki/Changelog-6.0" target="_blank" rel="noopener">VirtualBox</a> 和 <a href="https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html" target="_blank" rel="noopener">VMware</a> 都发布了支持 Hyper-V 和 WSL2 的版本，兼容性不是问题</li>
 <li>LxRunOffline 不支持操作 WSL2 需要先转换为 WSL1</li>
-<li>进行系统全量备份时切换为 WSL 1 ，因原先的 rootfs 变成了 vhdx ，加之 LxRunOffline 还不支持备份还原 WSL2 容易丢失 WSL（</li>
+<li>进行系统全量备份时建议切换为 WSL 1 ，因容易丢失 WSL，加之原先的 rootfs 变成了 vhdx ，而 LxRunOffline 还不支持备份还原 WSL2</li>
 </ul>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><ul>
 <li>M$ 在 Build 2020 全球开发者大会上，发布了 Windows Terminal 1.0 正式版，包管理器 winget 的预览版，WSL2 也将很快支持 GPU 和 Linux GUI，Windows 10：可能是对新手最友好的 Linux 发行版？</li>
@@ -418,7 +418,7 @@
 
 <span class="post-categories-list mt-2">
 
-<a class="post-categories-list-item" href='/categories/%E5%BC%80%E5%8F%91/'>开发</a>
+<a class="post-categories-list-item" href='/categories/%E6%8A%80%E6%9C%AF/'>技术</a>
 
 </span>
 
