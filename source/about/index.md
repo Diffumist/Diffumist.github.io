@@ -14,7 +14,7 @@ hide_license: true
  - 热爱开源，希望为开源做出自己的一些贡献
  - 喜欢简洁而优雅的东西
  - Arch Linux KDE
- - 大学生，菜，Studing
+ - 大学生，菜，Studying
  - INTP 和 INFP 之间反复横跳 
  - Not very articulate
 
